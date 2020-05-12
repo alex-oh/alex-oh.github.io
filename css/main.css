@@ -31,23 +31,29 @@ b {
 }
 
 h1 {
-    font-size: 2.25rem;
-    font-weight: 400;
-}
-
-h2 {
-    font-size: 1.5rem;
+    font-size: 36px;
     font-weight: 300;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
 h3 {
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 h4 {
     color: #4865B0;
+    font-size: 20px;
     font-weight: 400;
-    font-size: .8rem;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .header {
@@ -55,7 +61,7 @@ h4 {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     display: flex;
-    padding: 2.5em 4em;
+    padding: 2.5em 3em;
 }
 
 .header .logo {
@@ -71,18 +77,19 @@ h4 {
     flex-grow: 1;
 }
 
-.nav-bar a {
+.nav-bar a { /*nav bar font*/
     color: #435EA5;
     margin: auto 0;
     padding: 0 1.2em;
 
     font-size: 18;
     font-weight: bold;
+    letter-spacing: 0.1em;
     text-align: center;
 }
 
 /* content */
-.container-1-col {
+.wrapper {
     padding: 0 calc(15vw);
     display: flex;
     flex-direction: column;
@@ -90,25 +97,22 @@ h4 {
 
 /*hero section*/
 .hero {
-    padding-top: 25vh;
+    padding-top: 12em;
     display: flex;
     flex-direction: column;
     height: calc(100vh);
 }
 
 .hero h1 {
-    font-weight: 300;
     max-width: 36ch;
 }
 
-.hero h2 {
-    font-size: 1.3rem;
+.hero h3 {
     margin-top: 3em;
 }
 
 .hello {/*special font for the hello statement in index*/
-	font-size: 3.375rem;
-	font-weight: 300;
+	font-size: 54px;
 	color: #435EA5;
 	font-family: 'Roboto Slab', serif;
 	letter-spacing: -0.005em;
@@ -120,7 +124,7 @@ h4 {
     flex-direction: column;
     justify-content: flex-end;
 }
-.pointer-down h3 {
+.pointer-down h4 {
     text-align: center;
 }
 
@@ -199,3 +203,88 @@ h4 {
     margin-bottom: 2em;
 }
 
+.footer p {
+    font-size: 14px;
+    color: #4865B0;
+}
+
+@media only screen and (max-width: 991px){
+    .header {
+        padding: 2em 2em;
+    }
+    
+    .header .logo {
+        max-width: 2.5em;
+    }
+
+    .nav-bar a {
+        padding: 0 1em;
+        font-size: 16px;
+    }
+
+    /*fonts*/
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    /* content */
+    .wrapper {
+        padding: 0 calc(20vw);
+    }
+    
+    .hello {/*special font for the hello statement in index*/
+        font-size: 36px;
+    }
+
+    /*generic container section*/
+    .container {
+        margin: 1em 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .nav-bar a {
+        padding: 0 .6em;
+        font-size: 16px;
+    }
+
+    /*fonts*/
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+     
+   h4 {
+       font-size: 16px;
+   }
+
+    /*p is the same as above*/
+
+    /* content */
+    .wrapper {
+        padding: 0 calc(8vw);
+    }
+}
