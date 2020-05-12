@@ -19,27 +19,35 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    outline: 6px solid rgba(255, 255, 255, 0.1);
+    text-decoration-color: #4865B0;
+}
+
 b {
     font-weight: 500;
 }
 
 h1 {
-    font-size: 3.375rem;
-    font-weight: 300;
+    font-size: 2.25rem;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h4 {
-    font-weight: 500;
+    color: #4865B0;
+    font-weight: 400;
+    font-size: .8rem;
 }
 
 .header {
@@ -75,63 +83,72 @@ h4 {
 
 /* content */
 .container-1-col {
-    padding: 12.5em 11em 3.5em 11em;
+    padding: 0 calc(15vw);
+    display: flex;
+    flex-direction: column;
 }
 
 /*hero section*/
 .hero {
-    height: calc(100vh - 13em);
+    padding-top: 25vh;
     display: flex;
     flex-direction: column;
+    height: calc(100vh);
 }
 
 .hero h1 {
-    color: #435EA5;
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: -0.005em;
-}
-
-.hero h2 {
+    font-weight: 300;
     max-width: 36ch;
 }
 
-.hero h3 {
+.hero h2 {
+    font-size: 1.3rem;
     margin-top: 3em;
 }
 
-.point-down {
-    margin-top: 7em;
-    text-align: center;
-    /*!!!!this is bad(?) - flexbox used to place content at bottom of window*/
-    flex-grow: 1;
+.hello {/*special font for the hello statement in index*/
+	font-size: 3.375rem;
+	font-weight: 300;
+	color: #435EA5;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: -0.005em;
+}
 
+.pointer-down { 
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-
-.point-down h4 {
-    font-size: 20;
+.pointer-down h3 {
+    text-align: center;
 }
 
-/*projects section*/
-.projects {
-    margin-top: 3em;
+.pointer-down img {
+    align-self: center;
+    margin-bottom: 13px;
 }
 
-.projects a {
+/*generic container section*/
+.container {
+    margin: 1em 6em 0 6em;
+}
+
+/*a single project entry*/
+.project-entry {
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.project-entry a {
+    text-decoration: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     color: white;
 }
 
-.project-entry {
-    margin: 3em 0;
-    position: relative;
-}
-
-.project-entry .project-image {
+.project-image {
     position: relative;
     overflow: hidden;
 
@@ -139,14 +156,19 @@ h4 {
     justify-content: center;
 }
 
-.project-entry .project-image img {
+.project-image img {
     max-width: 100%;
     max-height: 100%;
     transition: transform 1s;
     object-fit: contain;
 }
 
-.project-entry .project-text {
+.projects h1 {
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+.project-text {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -164,7 +186,16 @@ h4 {
     justify-content: center;
 }
 
-.project-entry:hover .project-text {
+.project-text:hover {
     opacity: 100%;
     transition: opacity .5s;
 }
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
