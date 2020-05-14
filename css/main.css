@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
@@ -17,13 +17,14 @@ body {
 
 a { 
     text-decoration: none;
+    color: #204196;
 }
 
 a:hover {
     text-decoration-line: underline;
     text-decoration-style: solid;
     outline: 6px solid rgba(255, 255, 255, 0.1);
-    text-decoration-color: #4865B0;
+    text-decoration-color: #204196;
 }
 
 b {
@@ -33,22 +34,26 @@ b {
 h1 {
     font-size: 36px;
     font-weight: 300;
+    margin-bottom: 5px;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 h3 {
     font-size: 24px;
     font-weight: 300;
+    margin-bottom: 5px;
 }
 
 h4 {
-    color: #4865B0;
+    color: #204196;
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 p {
@@ -71,14 +76,13 @@ p {
     margin-right: auto;
 }
 
-.nav-bar {
+.menu {
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
 }
 
-.nav-bar a { /*nav bar font*/
-    color: #435EA5;
+.menu a { /*nav bar font*/
     margin: auto 0;
     padding: 0 1.2em;
 
@@ -90,17 +94,17 @@ p {
 
 /* content */
 .wrapper {
-    padding: 0 calc(15vw);
+    padding: 12em calc(15vw) 0 calc(15vw);
     display: flex;
     flex-direction: column;
 }
 
 /*hero section*/
 .hero {
-    padding-top: 12em;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    height: calc(100vh);
+    height: calc(100vh - 12em);
 }
 
 .hero h1 {
@@ -113,7 +117,7 @@ p {
 
 .hello {/*special font for the hello statement in index*/
 	font-size: 54px;
-	color: #435EA5;
+	color: #204196;
 	font-family: 'Roboto Slab', serif;
 	letter-spacing: -0.005em;
 }
@@ -135,7 +139,7 @@ p {
 
 /*generic container section*/
 .container {
-    margin: 1em 6em 0 6em;
+    margin: 1em 7.25em 0 7.25em;
 }
 
 /*a single project entry*/
@@ -180,7 +184,7 @@ p {
     right: 0px;
     background: rgba(0,0,0,.3);
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity .3s;
 
     color: white;
     text-align: center;
@@ -192,7 +196,71 @@ p {
 
 .project-text:hover {
     opacity: 100%;
-    transition: opacity .5s;
+    transition: opacity .3s;
+}
+
+/*two-column div*/
+.two-column {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.two-column img {
+    margin-left: 1.5em;
+    max-width: 30%;
+
+    flex-grow: 1;
+    align-self: start;
+}
+
+/*about page contact links - custom spacing*/
+.contact-link {
+    margin-right: 1em;
+}
+
+/*a section in the about page*/
+.abt-section {
+    margin-bottom: 4em;
+    margin-right: -18em;
+}
+
+.abt-section h4 {
+    color: #4C4C4C;
+}
+
+.skill-column {
+    margin-right: 7em;
+}
+
+/*generic flex box*/
+.flex-box-row {
+    display: flex;
+}
+
+/*projects page stuff*/
+.project-image {
+    margin: 1em 0;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-grid img {
+    width: 32%;
+    margin-bottom: 1em;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*footer*/
@@ -205,7 +273,7 @@ p {
 
 .footer p {
     font-size: 14px;
-    color: #4865B0;
+    color: #204196;
 }
 
 @media only screen and (max-width: 991px){
@@ -245,7 +313,7 @@ p {
 
     /* content */
     .wrapper {
-        padding: 0 calc(20vw);
+        padding: 12em calc(20vw) 0 calc(20vw);
     }
     
     .hello {/*special font for the hello statement in index*/
@@ -255,6 +323,25 @@ p {
     /*generic container section*/
     .container {
         margin: 1em 0 0 0;
+    }
+
+    /*about page*/
+    .two-column img {
+        max-width: 40%;
+    }
+
+    .abt-section {
+        margin-right: -14em;
+    }
+
+    .skill-column {
+        margin-right: 5em;
+    }
+
+    /*projects stuff*/
+    .image-grid img {
+        width: 48%;
+        margin-bottom: 1em;
     }
 }
 
@@ -266,7 +353,7 @@ p {
 
     /*fonts*/
     h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
     
     h2 {
@@ -285,6 +372,36 @@ p {
 
     /* content */
     .wrapper {
-        padding: 0 calc(8vw);
+        padding: 8em calc(8vw) 0 calc(8vw);
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .pointer-down { 
+        margin-top: 3em; 
+    }
+
+    /*about page*/
+    /*two-column div*/
+    .two-column {
+        margin-bottom: 4em;
+    }
+
+    .two-column img {
+        max-width: 50%;
+    }
+
+    .abt-section {
+        margin-right: 0;
+    }
+    
+    .flex-box-row{
+        flex-wrap: wrap;
+    }
+
+    .skill-column {
+        margin-right: 1.5em;
     }
 }
