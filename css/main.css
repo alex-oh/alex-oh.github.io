@@ -166,6 +166,7 @@ p {
     margin-bottom: 16px;
     position: relative;
     display: inline-block;
+    border: 1px solid blue;
 }
 
 .project-entry a {
@@ -185,7 +186,6 @@ p {
 
 .project-entry article img {
     max-width: 100%;
-    -webkit-max-width: 100%;
     object-fit: contain;
 }
 
