@@ -164,8 +164,7 @@ p {
 /*a single project entry*/
 .project-entry {
     margin-bottom: 16px;
-    border: 1px solid blue;
-    height: calc((70vw - 14.5em) * .75))
+    height: calc((70vw - 14.5em) * .75));
 }
 
 .project-entry a {
