@@ -165,7 +165,6 @@ p {
 .project-entry {
     margin-bottom: 16px;
     position: relative;
-    display: inline-block;
     border: 1px solid blue;
 }
 
@@ -182,10 +181,13 @@ p {
 
     display: flex;
     justify-content: center;
+
+    border: 2px green;
 }
 
 .project-entry article img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
@@ -196,7 +198,7 @@ p {
 
 .project-text {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0px;
     bottom: 0px;
     right: 0px;
@@ -206,6 +208,8 @@ p {
 
     color: white;
     text-align: center;
+
+    border-color: 3px red;
 }
 
 .project-text:hover {
