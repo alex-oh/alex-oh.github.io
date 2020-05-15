@@ -159,25 +159,23 @@ p {
 /*generic container section*/
 .container {
     margin: 1em 7.25em 0 7.25em;
-    display: flex;
-    flex-direction: column;
 }
 
 /*a single project entry*/
 .project-entry {
-    margin-bottom: 2em;
+    margin-bottom: 16px;
     position: relative;
+    display: inline-block;
 }
 
 .project-entry a {
     text-decoration: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.proj-img-index {
+.project-entry article {
     position: relative;
     overflow: hidden;
 
@@ -185,9 +183,8 @@ p {
     justify-content: center;
 }
 
-.proj-img-index img {
+.project-entry article img {
     max-width: 100%;
-    transition: transform 1s;
     object-fit: contain;
 }
 
@@ -208,10 +205,6 @@ p {
 
     color: white;
     text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .project-text:hover {
