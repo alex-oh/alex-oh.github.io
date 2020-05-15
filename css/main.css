@@ -182,7 +182,7 @@ p {
     display: flex;
     justify-content: center;
 
-    border: 2px green;
+    border: 2px solid green;
 }
 
 .project-entry article img {
@@ -209,7 +209,7 @@ p {
     color: white;
     text-align: center;
 
-    border-color: 3px red;
+    border: 3px solid red;
 }
 
 .project-text:hover {
