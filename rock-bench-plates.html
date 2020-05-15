@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Oh</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo" class="logo">
+        </a>
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="files/resume.pdf">Resume</a>
+        </nav>
+    </div>
+    <div role="content" class="wrapper">
+        <div class="container">
+            <h1><b>Rock Bench Plates</b></h1>
+            <h3>JPL</h3>
+            <br>
+            <h2><b>Overview</b></h2>
+            <p>
+                At the Jet Propulsion Lab, I developed mechanical ground support equipment that would be used in the upcoming test campaign that my engineering team was preparing for. This was a set of large aluminum plates that bridged 5 pedestals inside a environmental chamber, to be known as "rock bench plates".
+            </p>
+            <div class="project-image">
+                <img src="images/projects/rock/initial_concept.png" alt="" />
+            </div>
+            <p>
+                The rock bench plates consisted of four 2" thick aluminum plates ("baseplate") and four 1/2" thick aluminum plates ("skin") of the same geometry that fit on top. The baseplates were to be installed into the chamber once for the phase of the test campaign that they were to be used in. The rock bench skins would have rocks epoxied onto their surfaces. The skins would then be changed out when different rock samples were required.
+            </p>
+            
+            <br>
+            <h2><b>Goal</b></h2>
+            <p>The purpose of the test campaign was to duplicate the conditions that the Mars 2020 Rover Sample Caching Subsystem would experience while operating on Mars. To this end, the campaign consisted of many rock coring and abrading sequences.<br><br>
+            
+            The test chamber could only hold 5 rocks at a time, since there were only 5 mounting pedestals. Since testing had to be done in a martian environment - very low atmospheric pressure and subzero temperature conditions - the chamber had to be pumped down every time rocks were changed out. The pumpdown took a very long time to complete, so having new ground support equipment that increased the number of rocks that could be operated on in one pumpdown would result in huge time savings.</p>
+            
+            <br>
+            <h2><b>Design Process</b></h2>
+            <p>
+                I started out by defining design requirements by talking to engineers familiar with the test chamber and the abrading/coring sequences.
+            </p>
+
+            <br>
+            <h3><b>Key design requirements</b></h3>
+                <p>- Maximizes the working area of the robotic arm</p>
+                <p>- Fits in the test chamber inside 80/20 camera mounting structure</p>
+                <p>- Fits on the pre-existing bolt pattern on the pedestals</p>
+                <p>- Plates should dampen vibrations from the drilling turret</p>
+            <p><br>
+                I spoke to a CAD designer who modeled up the actual design after drafting the above requirements. During the modeling period, I would go between the I&T engineers and the designer to make sure that the design being developed fulfilled the expectations that the engineering stakeholders had for it. In preparation for the manufacturing readiness review (MRR), I worked with the manufacturing department to get a cost quote and guidance with making the plates more manufacturable. I also included details about the lifting hardware that would be used to move the plates in and out of the test chamber.
+            </p>
+            <div class="project-image">
+                <img src="images/projects/rock/rock_bench_in_testbed.PNG" alt="" />
+            </div>
+
+            <p>
+                In preparation for the MRR, I used NX Nastran to simulate some plate bending conditions that could be experienced in a regular test sequence. Additionally, I calculated the buckling stress of the pedestals that the plates would sit on top of. For both of these analyses, I worked with a structural analyst to verify the validity of the calculations.<br><br>
+            </p>
+            <div class="project-image"><img src="images/projects/rock/nastran.png" alt="" /></div>
+
+            <h2><b>Manufacturing Readiness Review</b></h2>
+            <p>
+                After a complete design was ready, I called together a manufacturing readiness review with key engineering stakeholders (mainly the I&T engineers I worked with on the daily). Some concerns were brought up about the weight of the rocks causing the 1/2" thick plates to deflect when a lift was done. We decided that a physical lift case test for the rock bench skins should be done. I redid the pedestal buckling hand calculations to include additional forces that would be experienced.
+            </p>
+            <div class="project-image"><img src="images/projects/rock/epoxy_test.PNG" alt="" /></div>
+
+            <h2><b>Result</b></h2>
+            <p>
+                With the post-MRR action items completed and purchasing approval, I ordered the rock bench plates. They were manufactured at JPL's onsite facility - the profile was waterjetted out, then the edges were finished with a mill. This happened near the end of my co-op period, so I got to see the skins get made, but many of the other plates were made after I left. At the end of my co-op, I had also written a draft of the lifting test for the rock bench skins.
+            </p>
+            <div class="project-image"><img src="images/projects/rock/irl_rock_bench.jpg" alt="" /></div>
+
+            <p>If you're still reading, here are some takeaways I got from going through this process.</p>
+                <p>- Get feedback from manufacturing when doing initial design. I didn't do this in the early stages, but really wish that I did.</p>
+                <p>- From the structural analyst I worked with, "you put fluff in [into the simulation], you get fluff out"</p>
+                <p>- "Design" can mean much more than CAD</p>
+            <div class="bottom-nav">
+                <a href="trumpet-fixture-block.html">
+                    <h2>previous<br>project</h2>
+                </a>
+                <a href="buoy.html">
+                    <h2>next<br>project</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2020 Alex Oh</p>
+    </div>
+</body>
+</html>

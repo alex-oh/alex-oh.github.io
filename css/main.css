@@ -7,6 +7,18 @@
     margin: 0;
 }
 
+/* hamburger  ------------------------*/
+#hamburger-menu-toggle-1 {
+    display: none;
+}
+
+/* Styles for the 'open' state, if the checkbox is checked */
+#hamburger-menu-toggle-1:checked ~ .menu {
+    display: initial;
+    /* see Step 3 for the rest of the styles */
+}
+/*------------------------------------*/
+
 body {
     background-color: #F6FEFF;
     font-family: 'Roboto', sans-serif;
@@ -50,7 +62,7 @@ h3 {
 }
 
 h4 {
-    color: #204196;
+    color: #4C4C4C;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -59,6 +71,10 @@ h4 {
 p {
     font-size: 18px;
     font-weight: 300;
+}
+
+.p-more-space {
+    margin: 1em 0;
 }
 
 .header {
@@ -86,15 +102,15 @@ p {
     margin: auto 0;
     padding: 0 1.2em;
 
-    font-size: 18;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
     letter-spacing: 0.1em;
     text-align: center;
 }
 
 /* content */
 .wrapper {
-    padding: 12em calc(15vw) 0 calc(15vw);
+    padding: 6em calc(15vw) 0 calc(15vw);
     display: flex;
     flex-direction: column;
 }
@@ -104,7 +120,7 @@ p {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 12em);
+    min-height: calc(100vh - 6em);
 }
 
 .hero h1 {
@@ -119,7 +135,8 @@ p {
 	font-size: 54px;
 	color: #204196;
 	font-family: 'Roboto Slab', serif;
-	letter-spacing: -0.005em;
+    letter-spacing: -0.005em;
+    margin-top: 2em;
 }
 
 .pointer-down { 
@@ -127,9 +144,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 2em;
 }
 .pointer-down h4 {
     text-align: center;
+    color: #204196;
 }
 
 .pointer-down img {
@@ -220,12 +239,9 @@ p {
 
 /*a section in the about page*/
 .abt-section {
-    margin-bottom: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     margin-right: -18em;
-}
-
-.abt-section h4 {
-    color: #4C4C4C;
 }
 
 .skill-column {
@@ -235,6 +251,11 @@ p {
 /*generic flex box*/
 .flex-box-row {
     display: flex;
+}
+
+/*coop page stuff */
+.coop-section {
+    margin: 2em 0;
 }
 
 /*projects page stuff*/
@@ -259,6 +280,7 @@ p {
 }
 
 .bottom-nav {
+    margin-top: 3em;
     display: flex;
     justify-content: space-between;
 }
@@ -285,9 +307,9 @@ p {
         max-width: 2.5em;
     }
 
-    .nav-bar a {
+    .menu a {
         padding: 0 1em;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /*fonts*/
@@ -313,7 +335,7 @@ p {
 
     /* content */
     .wrapper {
-        padding: 12em calc(20vw) 0 calc(20vw);
+        padding: 6em calc(20vw) 0 calc(20vw);
     }
     
     .hello {/*special font for the hello statement in index*/
@@ -346,7 +368,17 @@ p {
 }
 
 @media only screen and (max-width: 767px){
-    .nav-bar a {
+    /* hamburger  ------------------------*/
+    .sidebar {
+        display: none;
+    }
+
+    .menu-toggle {
+    display: initial; /* display the toggle, previously hidden */
+    }
+    /*--------------------------------------*/
+
+    .menu a {
         padding: 0 .6em;
         font-size: 16px;
     }
@@ -372,11 +404,15 @@ p {
 
     /* content */
     .wrapper {
-        padding: 8em calc(8vw) 0 calc(8vw);
+        padding: 6em calc(8vw) 0 calc(8vw);
     }
 
     .hero {
-        height: auto;
+        min-height: auto;
+    }
+
+    .hello {
+        margin-top: 2em;
     }
 
     .pointer-down { 
