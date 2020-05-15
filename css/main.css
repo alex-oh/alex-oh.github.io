@@ -169,9 +169,6 @@ p {
 
 .project-entry a {
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .project-entry article {
