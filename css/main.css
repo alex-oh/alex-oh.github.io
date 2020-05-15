@@ -165,10 +165,14 @@ p {
 .project-entry {
     margin-bottom: 16px;
     border: 1px solid blue;
+    height: calc((70vw - 14.5em) * .75))
 }
 
 .project-entry a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-entry article {
@@ -177,8 +181,6 @@ p {
 
     display: flex;
     justify-content: center;
-
-    border: 2px solid green;
 }
 
 .project-entry article img {
