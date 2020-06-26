@@ -19,43 +19,102 @@
     <div role="content" class="wrapper">
         <div class="container">
             <h1><b>Towed Communications Buoy</b></h1>
-            <h3>Senior Capstone</h3>
-            <br>
-            <h2><b>Background</b></h2>
-            <p>
-                Boston Engineering Corporation's flagship UUV system known as the BIOSwimmer is a tuna-inspired robot used for underwater hull and port inspection. In order to communicate with operators while submerged, the BIOSwimmer is physically tethered to a buoy that transmits Wi-Fi signal.
-            </p>
-            <div class="project-image">
-                <img src="images/projects/buoy/bioswimmer.PNG" alt="" />
+            <div role="overview" class="proj-sect">
+                <p>
+                    <b>Team: </b>Senior Capstone (Team of 5)
+                    <br><br>
+                    <b>Role: </b>Design, Testing, Prototyping
+                    <br><br>
+                    As part of a capstone team of five, I designed a communications buoy that sent wireless signals between a computer and a UUV known as the BIOSwimmer.
+                </p>
+                <div class="project-image"><img src="images/projects/buoy/gimbal_assembly.jpg" alt="" /></div>
             </div>
-            <h2><b>Problem</b></h2>
-            <p>
-                The original communication buoy used to relay data and commands between the BIOSwimmer and the operating computer was unreliable. Communications would frequently drop out, due to the shape and size of the buoy.
-            </p>
-            <div class="project-image">
-                <img src="images/projects/buoy/old_buoy.png" alt="" />
+            <div role="background" class="proj-sect">
+                <h2><b>Background</b></h2>
+                <p>
+                    Boston Engineering Corporation's flagship UUV system known as the BIOSwimmer is a biomimetic tuna robot used for underwater hull and port inspection. In order to communicate with operators while submerged, the BIOSwimmer is physically tethered to a buoy that transmits a Wi-Fi signal.
+                </p>
+                <div class="project-image">
+                    <img src="images/projects/buoy/bioswimmer.PNG" alt="" />
+                </div>
             </div>
-            <h2><b>Process</b></h2>
-            <p>
-                We brainstormed many concepts in the summer term, eventually narrowing down to two designs that we prototyped and tested. After the first round of prototyping, we selected our gimbal buoy design to be further refined. Testing and fluid simulation with OpenFOAM, an open source CFD simulation package, were performed to validate the performance of our designs. With the conclusion of Testing Phase 2, we presented our refined prototype design at the end-of-semester capstone presentation day, winning an award for “Most Technically Sound” in our track.
-            </p>
-            <div class="project-image">
-                <img src="images/projects/buoy/gimbal_CAD.PNG" alt="" />
+            <div role="problem" class="proj-sect">
+                <h2><b>Problem</b></h2>
+                <p>
+                    The existing communication buoy used to relay data and commands between the BIOSwimmer and the operating computer was unreliable. Communications would frequently drop out during operations, due to the shape and size of the buoy.
+                </p>   
+                <div class="project-image">
+                    <img src="images/projects/buoy/old_buoy.png" alt="" />
+                </div>
             </div>
-            <p>
-                For this project, I modeled the initial design for the gimbal prototype using Solidworks, and worked with another teammate to generate the test plans that would be used throughout the design process. I also assembled some of the prototypes/components, and performed some of the surface finishing/rework for 3D printed parts that required it.
-            </p>
-
-            <div class="project-image">
-                <img src="images/projects/buoy/gimbal_assembly.jpg" alt="" />
+            <div role="objective" class="proj-sect">
+                <h2><b>Objective</b></h2>
+                <p>
+                    Design a communications buoy that maintains a reliable wireless connection during operation. A “reliable” design would maintain a strong signal for at least 80% of the duration of our testing.
+                </p>
             </div>
-
-            <h2><b>Skills Used/Developed</b></h2>
-                <p>Solidworks</p>
-                <p>Test Plan Development</p>
-                <p>GrabCAD - CAD file management</p>
-                <p>3D print surface finishing</p>
-                <p>Product Management</p>
+            <div role="exploration" class="proj-sect">
+                <h2><b>Exploration</b></h2>
+                <p>
+                    We started by speaking with the design engineers who worked on the BIOSwimmer, to get a better idea of the problem. We also conducted a root cause study to identify the primary cause of signal dropout, which consisted of submerging a box containing the Wi-Fi module in various orientations in water.
+                </p>
+                <div class="project-image">
+                    <img src="images/projects/buoy/rootcause.png" alt="" />
+                </div>
+                <p>
+                    After brainstorming many design concepts, the team selected two designs that would be developed for prototyping phase I.
+                </p>
+                <div class="project-image">
+                    <img src="images/projects/buoy/brainstorm.PNG" alt="" />
+                </div>
+            </div>
+            <div role="prototyping" class="proj-sect">
+                <h2><b>Prototyping</b></h2>
+                <p>
+                    I was responsible for designing and modeling the third concept, which was a buoy that incorporated a gimbal system to suspend the Wi-Fi module above the surface of the water. Suspending the Wi-Fi module above the water would reduce optical interference from tall waves during operation.
+                </p>
+                <div class="image-grid">
+                    <img src="images/projects/buoy/v1CAD.PNG" alt="" />
+                    <img src="images/projects/buoy/v1irl.jpg" alt="" />
+                </div>
+            </div>
+            <div role="testing" class="proj-sect">
+                <h2><b>Testing</b></h2>
+                <p>
+                    I was also responsible for creating the test plans that would be used to evaluate the performance of our prototypes. By pinging the buoy’s Wi-Fi module, we generated plots that tracked the buoy’s signal performance while it was towed in two different movement sequences.
+                </p>
+                <div class="project-image">
+                    <img src="images/projects/buoy/testplot.png" alt="" />
+                </div>
+            </div>
+            <div role="refinement" class="proj-sect">
+                <h2><b>Refinement</b></h2>
+                <p>
+                    Based on the results from our Proto I testing, we selected the gimbal buoy for further refinement and testing. Parts were updated to make the design easier to assemble and more structurally sound.
+                </p>
+                <div class="project-image">
+                    <img src="images/projects/buoy/update1.PNG" alt="" />
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/buoy/update2.PNG" alt="" />
+                </div>
+            </div>
+            <div role="results" class="proj-sect">
+                <h2><b>Results</b></h2>
+                <p>
+                    Following our second round of testing, we determined that our gimbal buoy design successfully transmitted signals for 95% of testing time. Compared to the already existing buoy, our design was a significant improvement that would benefit BIOSwimmer operations.
+                </p>
+                <div class="project-image">
+                    <img src="images/projects/buoy/v2irl.jpg" alt="" />
+                </div>
+            </div>
+            <div role="skills" class="proj-sect">
+                <h2><b>Skills Developed</b></h2>
+                <h4>- Solidworks</h4>
+                <h4>- Test Plan Development</h4>
+                <h4>- 3D print surface finishing</h4>
+                <h4>- Product Management</h4>
+            </div>
 
             <div class="bottom-nav">
                 <a href="rock-bench-plates.html">
