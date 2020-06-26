@@ -253,6 +253,10 @@ p {
 }
 
 /*projects page stuff*/
+.proj-sect {
+    margin: 1em 0;
+}
+
 .project-image {
     margin: 1em 0;
 }
