@@ -269,14 +269,15 @@ p {
 }
 
 .image-grid {
+    margin: 1em 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .image-grid img {
-    width: 32%;
-    margin-bottom: 1em;
+    width: 49%;
+    height: 49%;
 }
 
 .bottom-nav {
