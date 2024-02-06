@@ -286,6 +286,14 @@ p {
     justify-content: space-between;
 }
 
+.prev-proj {
+    margin-right: auto;
+}
+
+.next-proj {
+    margin-left: auto;
+}
+
 /*footer*/
 .footer {
     display: flex;
